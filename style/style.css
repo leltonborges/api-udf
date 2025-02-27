@@ -44,6 +44,17 @@ button {
     }
 }
 
+img {
+    &.avatar {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+td {
+    border: 1px solid #000;
+}
+
 .links {
     gap: 10px;
 
@@ -85,4 +96,24 @@ button {
             background: #ccc;
         }
     }
+}
+
+.flex {
+    display: flex;
+
+    &.d-row {
+        flex-direction: row;
+    }
+
+    &.d-column {
+        flex-direction: column;
+    }
+
+    &.gap-10 {
+        gap: 10px;
+    }
+}
+
+.icon-trash {
+    font-size: 100px;
 }

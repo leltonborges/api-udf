@@ -1,3 +1,8 @@
+body {
+    height: 100%;
+    gap: 10px;
+}
+
 header {
     height: auto;
     padding-bottom: 20px;
@@ -51,8 +56,22 @@ img {
     }
 }
 
+table {
+    border-top: 10px solid #999;
+    border-left: 10px solid #999;
+    border-right: 10px solid #1e1e1e;
+    border-bottom: 10px solid #1e1e1e;
+    box-sizing: border-box;
+}
+
 td {
     border: 1px solid #000;
+}
+
+footer {
+    span {
+        font-size: 12px;
+    }
 }
 
 .links {
@@ -116,4 +135,22 @@ td {
 
 .icon-trash {
     font-size: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1 1;
+}
+
+.f-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.atividades {
+    a {
+        text-decoration: none;
+    }
 }

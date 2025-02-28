@@ -74,6 +74,28 @@ footer {
     }
 }
 
+.btn {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #707070;
+    transition: width .5s ease;
+}
+
+.btn:hover::after {
+    width: 100%;
+}
+
 .links {
     gap: 10px;
 
@@ -93,18 +115,19 @@ footer {
         padding: 7px 15px;
         background: #eee;
         border-radius: 3px;
-        transition: all 0.5s ease-in;
+        transition: all .5s ease-in;
 
         &:hover {
-            transition: all 0.5s ease-in;
+            transition: all .5s ease-in;
         }
     }
 
     .link-header {
         background: #ccc;
+        box-sizing: border-box;
 
         &:hover {
-            background: #eee;
+            background: #fff;
         }
     }
 

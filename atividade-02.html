@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 02</title>
+    <style>
+        ol li {
+            margin: 5px;
+            padding: 10px;
+            background-color: #ccc;
+
+            &::marker {
+                color: black;
+            }
+        }
+
+        li:nth-child(1) {
+            background-color: rgb(148, 34, 34);
+            color: white;
+        }
+
+        li:nth-child(2) {
+            background-color: rgb(0, 255, 0);
+        }
+
+        li:nth-child(3) {
+            background-color: rgb(55, 55, 144);
+            color: white;
+        }
+
+        li:nth-child(4) {
+            background-color: rgb(255, 255, 0);
+        }
+
+        li:nth-child(5) {
+            background-color: rgb(91, 21, 91);
+            color: white;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            gap: 20px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<a href="index.html">Home</a>
+<ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+</ol>
+</body>
+</html>
